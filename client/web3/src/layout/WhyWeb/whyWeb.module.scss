@@ -1,0 +1,59 @@
+.whyWeb{
+    border-bottom: 1px solid #2D3943;
+    padding: 5vh 0;
+    .container {
+      .whyWebRow {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 5vw;
+        .rowItem {
+            display: inline-block;
+            width: 25vw;
+            .itemTitle {
+                min-height: 5vh;
+              h3{
+                font-family: 'Grotesk';
+                color: white;
+                font-size: 2vw;
+              }
+            }
+        }
+      }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+  .whyWebRow{
+    flex-direction: column !important;
+    .rowItem{
+      width: inherit !important;
+      .itemTitle{
+        h3{
+          font-size: 4vw !important;
+        }
+      }
+      .itemText {
+        .text {
+          font-size: 4vw;
+        }
+      }
+    }
+  }
+
+
+  
+}
+
+// @media screen and (max-width: 425px) {
+
+
+  
+// }
+
+// @media screen and (max-width: 320px) {
+
+
+  
+// }

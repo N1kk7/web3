@@ -1,0 +1,65 @@
+
+
+.competition{
+    background-color: #55E5C5;
+    .container {
+      .competitionWrapper {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 5vh 0;
+        .infoItem {
+            min-width: 70vw;
+            .title {
+              color: black;
+            }
+            .description {
+              margin-bottom: 4vh;
+              font-size: 2vw;
+            }
+            .competitionBtn {
+              .mainBtn{
+                border: 2px solid black;
+              }
+              .mainBtn:hover{
+                background-color: black;
+                color: #55E5C5;
+                h3{
+                    text-decoration: none;
+                }
+              }
+            }
+        }
+        .imgItem {
+            display: inherit;
+            align-items: center;
+            img{
+              min-width: 8vw;
+            }
+          
+        }
+      }
+    }
+}
+
+@media screen and (max-width: 768px) {
+      .competitionWrapper {
+        flex-direction: column;
+        .imgItem{
+          margin-top: 5vh;
+          img{
+            max-width: 15vw;
+          }
+        }
+        .infoItem{
+          .description{
+            span{
+              font-size: 4vw;
+            }
+          }
+        }
+      }
+
+
+
+  
+}

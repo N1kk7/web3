@@ -1,0 +1,60 @@
+@import '../components/MainBtn/mainBtn.module.scss';
+
+@import '../layout/Header/header.module.scss';
+@import '../layout/LeadingTool/leadingTool.module.scss';
+@import '../layout/WhyWeb/whyWeb.module.scss';
+@import '../layout/DiscowerWeb/discowerWeb.module.scss';
+@import '../layout/Expert/expert.module.scss';
+@import '../layout/Latest/latest.module.scss';
+@import '../layout/Library/library.module.scss';
+@import '../layout/Competition/competition.module.scss';
+@import '../layout/Footer/footer.module.scss';
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../assets/fonts/helvetica-light-587ebe5a59211.ttf');
+}
+@font-face {
+    font-family: 'Grotesk';
+    src: url('../assets/fonts/SharpGrotesk-Book25.otf');
+}
+
+.container {
+    width: 85cqw;
+    margin: 0 auto;
+}
+.title{
+    font-family: 'Grotesk';
+    font-size: 1.3vw;
+    line-height: 4vh;
+    color: white;
+    font-weight: inherit;
+    h1{
+        line-height: 6vh;
+    }
+}
+.text{
+    font-family: 'Helvetica';
+    font-size: 1.5vw;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        width: 90cqw;
+    }
+    .title{
+        font-size: 3vw;
+        h1{
+            line-height: unset;
+        }
+    }
+    .text{
+        font-size: 3vw;
+    }
+    
+}
+
+
+  

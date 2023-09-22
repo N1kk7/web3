@@ -1,0 +1,44 @@
+.mainBtn{
+    width: 185px;
+    height: 40px;
+    background-color: #55E5C5;
+    text-align: center;
+    h3 {
+        margin: auto 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: inherit;
+        font-family: "Grotesk";
+        font-size: 14px;
+    }
+}
+.mainBtn:hover{
+    background-color: #9DFFE9;
+    cursor: pointer;
+    h3{
+        text-decoration: underline;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mainBtn{
+        width: 30vw;
+        height: 4vh;
+        h3 {
+            font-size: 1.8vw;
+        }
+    }
+    
+    
+}
+
+@media screen and (max-width: 425px) {
+    .mainBtn{
+        h3 {
+            font-size: 2vw;
+        }
+    }
+    
+    
+}

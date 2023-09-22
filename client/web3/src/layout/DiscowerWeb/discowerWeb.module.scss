@@ -1,0 +1,104 @@
+.discowerWeb{
+    border-bottom: 1px solid #2D3943;
+    .container {
+      .discowerWrapper {
+        display: flex;
+        justify-content: space-between;
+        .imageItem {
+          display: flex;
+          align-items: flex-end;
+            img{
+                // height: 100%;
+                max-width: 40vw;
+            }
+          
+        }
+        .infoItem {
+          margin-left: 2vw;
+            .text {
+              width: 35vw;    
+              line-height: 2cqw;
+              font-size: 1.3vw;
+            }
+
+          
+            .listWrapper {
+              ul{
+                padding-left: 0;
+                li{
+                    padding: 1vh 0;
+                    line-height: 5vw;
+                    list-style-type: none;
+                    color: white;
+                    font-family: 'Helvetica';
+                    font-size: 1.2vw;
+                    .listImg {
+                      display: inline-block;
+                      img{
+                        padding: 0 1cqw;
+                        height: inherit;
+                      }
+                    }
+                    .listText {
+                      display: inline-block;
+                      max-width: 80vw;
+                      
+                    }
+                    
+                    
+
+                }
+              }
+            }
+
+        }
+      }
+    }
+}
+
+@media screen and (max-width: 768px) {
+  .discowerWeb{
+    padding: 4vh 0 0;
+    .discowerWrapper{
+      flex-direction: column-reverse;
+      .imageItem{
+        justify-content: center;
+        img{
+          max-width: 85vw !important;
+        }
+        
+      }
+      .infoItem{
+        .text{
+          width: 85vw !important;
+          font-size: 4vw !important;
+          line-height: 5cqw !important;
+        }
+      }
+      .listWrapper{
+        li{
+          font-size: 4vw !important;
+        }
+      }
+    }
+    
+
+  }
+  
+
+
+
+  
+}
+
+// @media screen and (max-width: 425px) {
+
+
+  
+// }
+
+// @media screen and (max-width: 320px) {
+
+
+  
+// }
