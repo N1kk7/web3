@@ -8,18 +8,19 @@ import Terms from "./pages/Terms";
 import store from "./store";
 import { Provider } from 'react-redux';
 
+const PUBLIC_URL = process.env.NODE_ENV === 'development' ? '/' : process.env.PUBLIC_URL;
+
 
 
 function App() {
 
-// const {PUBLIC_URL} = process.env;
 
 
-// console.log(NODE_ENV);
+
+console.log(PUBLIC_URL);
 
 useEffect(() => {
-  console.log(process.env.PUBLIC_URL);
-  
+
   // window.process = {
   //   ...window.process,
   // };
@@ -34,9 +35,9 @@ useEffect(() => {
           <div className="App">
             <Header/>
             <Routes>
-              <Route path='/' element={<Home/>}/>
-              <Route path='/terms&conditions' element={<Terms/>}/>
-              <Route path='/privacy&policy' element={<Privacy/>}/>
+              <Route path={`${PUBLIC_URL}`} element={<Home/>}/>
+              <Route path={`${PUBLIC_URL}terms&conditions`} element={<Terms/>}/>
+              <Route path={`${PUBLIC_URL}privacy&policy`} element={<Privacy/>}/>
               {/* <Route path='web3/client/web3/build/' element={<Home/>}/>
               <Route path='web3/client/web3/build/terms&conditions' element={<Privacy/>}/> */}
             </Routes>
@@ -45,7 +46,7 @@ useEffect(() => {
         </Provider>
 
       </Router>
-    
+
   );
 }
 
