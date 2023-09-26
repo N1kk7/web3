@@ -36,9 +36,9 @@ useEffect(() => {
           <div className="App">
             <Header/>
             <Routes>
-              <Route path={`${PUBLIC_URL}`} element={<Home/>}/>
-              <Route path={`${PUBLIC_URL}terms&conditions`} element={<Terms/>}/>
-              <Route path={`${PUBLIC_URL}privacy&policy`} element={<Privacy/>}/>
+              <Route path="/" element={<Home/>}/>
+              <Route path="terms&conditions" element={<Terms/>}/>
+              <Route path="privacy&policy" element={<Privacy/>}/>
               {/* <Route path='web3/client/web3/build/' element={<Home/>}/>
               <Route path='web3/client/web3/build/terms&conditions' element={<Privacy/>}/> */}
             </Routes>
