@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "./layout/Header/Header";
 import Home from "./pages/Home";
 import Footer from "./layout/Footer/Footer";
@@ -11,6 +11,21 @@ import { Provider } from 'react-redux';
 
 
 function App() {
+
+// const {PUBLIC_URL} = process.env;
+
+
+// console.log(NODE_ENV);
+
+useEffect(() => {
+  console.log(process.env.PUBLIC_URL);
+  
+  // window.process = {
+  //   ...window.process,
+  // };
+}, []);
+
+
   return (
 
       <Router>
