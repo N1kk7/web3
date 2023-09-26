@@ -3,7 +3,7 @@ import Header from "./layout/Header/Header";
 import Home from "./pages/Home";
 import Footer from "./layout/Footer/Footer";
 import Privacy from "./pages/Privacy";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Terms from "./pages/Terms";
 import store from "./store";
 import { Provider } from 'react-redux';
@@ -17,6 +17,7 @@ function App() {
 
 
 
+console.log(process.env.PUBLIC_URL);
 console.log(PUBLIC_URL);
 
 useEffect(() => {
