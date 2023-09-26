@@ -1,14 +1,44 @@
 
 .header{
     border-bottom: 1px solid #2D3943;
+    display: flex;
+    
     .headerWrapper{
         display: flex;
         justify-content: space-between;
         align-items: center;
         min-height: 66px;
         height: 8cqh;
+        position: relative;
+        transition: all ease 0.7s;
+        left: 0;
+
+        .backBtn {
+            display: flex;
+            right: 75vw;
+            height: auto;
+            align-items: center;
+            position: relative;
+            // left: 38vw;
+            span{
+                color: white;
+            }
+          
+        }
+        
 
     }
     
+    
+}
+.headerActive{
+    .headerWrapper{
+        transition: all ease 0.7s;
+
+        position: relative;
+        left: 38vw;
+    
+
+    }
     
 }

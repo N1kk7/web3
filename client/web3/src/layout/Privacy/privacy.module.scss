@@ -1,0 +1,25 @@
+.privacy{
+    .textList {
+      ul{
+        list-style: none;
+        li::before{
+            content: "\2022";
+            color: white;
+            font-weight: bold;
+            width: 1.5vw;
+            margin-left: -2vw;
+            position: absolute;
+        }
+        li{
+            
+            p{
+                color: #fff;
+                font-family: 'Helvetica';
+                font-weight: 300;
+                font-size: 1.5vw;
+
+            }
+        }
+      }
+    }
+}

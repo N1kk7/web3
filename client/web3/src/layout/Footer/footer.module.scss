@@ -1,4 +1,6 @@
-.footerWrapper{
+.footer{
+  border-top: 1px solid #2D3943;
+  .footerWrapper{
     margin: 5vh 0;
     display: flex;
     justify-content: flex-start;
@@ -47,6 +49,13 @@
     }
    
 }
+}
+
+
+
+
+
+
 @media screen and (max-width: 768px) {
   .footerWrapper{
     flex-direction: column;

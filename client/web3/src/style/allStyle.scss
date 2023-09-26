@@ -9,6 +9,8 @@
 @import '../layout/Library/library.module.scss';
 @import '../layout/Competition/competition.module.scss';
 @import '../layout/Footer/footer.module.scss';
+@import '../layout/Privacy/privacy.module.scss';
+@import '../layout/Terms/terms.module.scss';
 
 @font-face {
     font-family: 'Helvetica';
@@ -37,6 +39,11 @@
     font-family: 'Helvetica';
     font-size: 1.5vw;
     color: white;
+}
+
+.linkTo{
+    color: white;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
