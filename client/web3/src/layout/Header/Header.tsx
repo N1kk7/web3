@@ -4,6 +4,7 @@ import MainBtn from '../../components/MainBtn/MainBtn'
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { headerState } from '../../store/stateReducer';
+import {PUBLIC_URL} from '../../App';
 
 export default function Header() {
 
@@ -26,25 +27,25 @@ export default function Header() {
   return (
     <div className={`header ${headerClass}`}>
 
-     
+
       <div className="container">
         <div className="headerWrapper">
-            
-         
+
+
           <div className="logo">
             <img src={mainLogo} alt="" />
           </div>
-          <Link to={'/'} className="backBtn linkTo" onClick={() => {dispatch(headerState('Home')); }} style={{cursor: 'pointer'}}>
+          <Link to={`${PUBLIC_URL}`} className="backBtn linkTo" onClick={() => {dispatch(headerState('Home')); }} style={{cursor: 'pointer'}}>
                 <img src={backBtn} alt="backBtn" />
                 <span>Back</span>
           </Link>
           <MainBtn/>
 
         </div>
-       
+
 
       </div>
-      
+
     </div>
   )
 }

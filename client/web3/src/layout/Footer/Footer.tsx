@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { headerState } from '../../store/stateReducer'
 // import Privacy from '../../pages/Privacy'
+import {PUBLIC_URL} from '../../App';
 
 export default function Footer() {
 const dispatch = useDispatch();
@@ -26,7 +27,7 @@ const dispatch = useDispatch();
                 </div>
                 <div className="text">
                   <p>
-                    User flows library of crypto, NFT, and Web3 projects. 
+                    User flows library of crypto, NFT, and Web3 projects.
                     Insights, experts reviews to enhance Web3 UX
                   </p>
                 </div>
@@ -39,19 +40,19 @@ const dispatch = useDispatch();
                   </h3>
                 </div>
                 <div className="text">
-                  <Link to={'/terms&conditions'} className='linkTo' onClick={() => {dispatch(headerState('Link')); }} style={{cursor: 'pointer'}}>
+                  <Link to={`${PUBLIC_URL}terms&conditions`} className='linkTo' onClick={() => {dispatch(headerState('Link')); }} style={{cursor: 'pointer'}}>
 
                     <span>
                       Terms and Conditions
                     </span>
                   </Link>
-                 
-                  <Link to={'/privacy&policy'} className='linkTo' onClick={() => {dispatch(headerState('Link')); }} style={{cursor: 'pointer'}}>
+
+                  <Link to={`${PUBLIC_URL}privacy&policy`} className='linkTo' onClick={() => {dispatch(headerState('Link')); }} style={{cursor: 'pointer'}}>
                     <span>
                       Privacy Policy
-                    </span>  
+                    </span>
                   </Link>
-                      
+
                   <span>
                     hello@web3flows.com
                   </span>
@@ -72,9 +73,9 @@ const dispatch = useDispatch();
             </div>
             </div>
           </div>
-          
+
         </div>
-      
+
     </>
   )
 }
