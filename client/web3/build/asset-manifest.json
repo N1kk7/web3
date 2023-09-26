@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.27b09796.css",
-    "main.js": "/static/js/main.f256e594.js",
-    "static/media/SharpGrotesk-Book25.otf": "/static/media/SharpGrotesk-Book25.51cc2126018aad074a10.otf",
-    "static/media/helvetica-light-587ebe5a59211.ttf": "/static/media/helvetica-light-587ebe5a59211.6e816f786a7f97793401.ttf",
-    "static/media/Latest.png": "/static/media/Latest.12b91cc7688ea9f61fb9.png",
-    "static/media/img1.png": "/static/media/img1.b3040c792c342bd466d4.png",
-    "static/media/Discower.png": "/static/media/Discower.b7cbf40d1de5d04854ef.png",
-    "static/media/Library.png": "/static/media/Library.96cd3b3a5157baffbdc6.png",
-    "index.html": "/index.html",
-    "main.27b09796.css.map": "/static/css/main.27b09796.css.map",
-    "main.f256e594.js.map": "/static/js/main.f256e594.js.map"
+    "main.css": "https://n1kk7.github.io/web3/client/web3/build/static/css/main.2757e58e.css",
+    "main.js": "https://n1kk7.github.io/web3/client/web3/build/static/js/main.6f1412d7.js",
+    "static/media/SharpGrotesk-Book25.otf": "https://n1kk7.github.io/web3/client/web3/build/static/media/SharpGrotesk-Book25.51cc2126018aad074a10.otf",
+    "static/media/helvetica-light-587ebe5a59211.ttf": "https://n1kk7.github.io/web3/client/web3/build/static/media/helvetica-light-587ebe5a59211.6e816f786a7f97793401.ttf",
+    "static/media/Latest.png": "https://n1kk7.github.io/web3/client/web3/build/static/media/Latest.12b91cc7688ea9f61fb9.png",
+    "static/media/img1.png": "https://n1kk7.github.io/web3/client/web3/build/static/media/img1.b3040c792c342bd466d4.png",
+    "static/media/Discower.png": "https://n1kk7.github.io/web3/client/web3/build/static/media/Discower.b7cbf40d1de5d04854ef.png",
+    "static/media/Library.png": "https://n1kk7.github.io/web3/client/web3/build/static/media/Library.96cd3b3a5157baffbdc6.png",
+    "index.html": "https://n1kk7.github.io/web3/client/web3/build/index.html",
+    "main.2757e58e.css.map": "https://n1kk7.github.io/web3/client/web3/build/static/css/main.2757e58e.css.map",
+    "main.6f1412d7.js.map": "https://n1kk7.github.io/web3/client/web3/build/static/js/main.6f1412d7.js.map"
   },
   "entrypoints": [
-    "static/css/main.27b09796.css",
-    "static/js/main.f256e594.js"
+    "static/css/main.2757e58e.css",
+    "static/js/main.6f1412d7.js"
   ]
 }
