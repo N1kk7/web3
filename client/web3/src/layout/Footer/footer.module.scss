@@ -23,11 +23,23 @@
           }
         }
         .text{
+          .linkTo{
+            span{
+              border: 1px solid #2D3943;
+              margin: 1vh 0;
+
+            }
+            span:hover{
+              border: 1px solid white;
+
+            }
+          }
             span{
                 display: block;
-                padding: 1vh 0;
+                padding: 1vh;
             }
         }
+
         .imageItem {
             a{
                 display: contents;
