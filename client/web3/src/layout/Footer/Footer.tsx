@@ -3,9 +3,11 @@ import Logo from '../../assets/images/logo.png'
 import twitter from '../../assets/images/twitter.png'
 import youtube from '../../assets/images/youtube.png'
 import telegramm from '../../assets/images/telegramm.png'
+import envelope from '../../assets/images/envelope.png'
 import { Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
-import { headerState } from '../../store/stateReducer'
+import { headerState, mailModalState } from '../../store/stateReducer'
+
 // import Privacy from '../../pages/Privacy'
 
 export default function Footer() {
@@ -64,9 +66,11 @@ const dispatch = useDispatch();
                   </h3>
                 </div>
                 <div className="imageItem">
-                  <a href="/#"><img src={twitter} alt="twitter"/></a>
-                  <a href="/#"><img className='centerImage' src={youtube} alt="youtube" /></a>
-                  <a href="/#"><img src={telegramm} alt="telegramm" /></a>
+                  <div className='footerImg'><img src={twitter} alt="twitter"/></div>
+                  <div className='footerImg'><img className='centerImage' src={youtube} alt="youtube" /></div>
+                  <div className='footerImg'><img src={telegramm} alt="telegramm" /></div>
+                  <div className='footerImg' onClick={() => {dispatch(mailModalState())}}><img className='envelope' src={envelope} alt="telegramm" /></div>
+
                 </div>
               </div>
             </div>

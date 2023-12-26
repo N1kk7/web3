@@ -3,6 +3,7 @@ import Header from "./layout/Header/Header";
 import Home from "./pages/Home";
 import Footer from "./layout/Footer/Footer";
 import Privacy from "./pages/Privacy";
+import Modal from "./layout/Modal/Modal";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Terms from "./pages/Terms";
 import store from "./store";
@@ -13,6 +14,8 @@ export const PUBLIC_URL = process.env.NODE_ENV === 'development' ? '/' : process
 
 
 function App() {
+
+  // const dispatch = useDispatch()
 
 
 
@@ -43,6 +46,7 @@ useEffect(() => {
               <Route path='web3/client/web3/build/terms&conditions' element={<Privacy/>}/> */}
             </Routes>
             <Footer/>
+            <Modal/>
           </div>
         </Provider>
 

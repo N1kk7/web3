@@ -41,7 +41,7 @@
         }
 
         .imageItem {
-            a{
+            .footerImg{
                 display: contents;
                 height: inherit !important;
             }
@@ -49,7 +49,14 @@
                 margin: 0 2vw;
 
             }
+            .envelope{
+              background-color: white;
+              padding: 1px 2px;
+              border-radius: 5px;
+              margin-left: 2vw;
+            }
             img{
+                max-width: 32px;
                 opacity: 0.3;
             }
             img:hover{

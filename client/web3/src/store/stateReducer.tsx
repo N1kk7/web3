@@ -6,6 +6,7 @@ export const stateSlice = createSlice({
     initialState: {
         header : false,
         headerClass: '' as string,
+        mailModal: false
 
     },
     reducers: {
@@ -25,26 +26,13 @@ export const stateSlice = createSlice({
                 default:
                     state.header = false;
                     state.headerClass = '';
-                    break;
-
-
-                
+                    break;   
             }
-
-            // state.header = !state.header
-            // return {
-            //     type: 'MY_TEST_ACTION',
-
-            // }
+        },
+        mailModalState: (state) => {
+            state.mailModal = !state.mailModal;
+            // console.log(state.mailModal);
             
-            // state.header = !state.header
-            // state.header ? state.headerClass = 'headerActive' : state.headerClass = '';
-
-
-            // console.log(state.header);
-            // console.log(action.payload);
-            
-
 
         }
 
@@ -54,5 +42,5 @@ export const stateSlice = createSlice({
 
 
 
-export const {headerState} = stateSlice.actions
+export const {headerState, mailModalState} = stateSlice.actions
 export default stateSlice.reducer;
